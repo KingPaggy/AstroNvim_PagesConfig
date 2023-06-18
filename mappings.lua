@@ -20,6 +20,8 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>L"] = { "<cmd>Lazy<cr>", desc = "Lazy panel" },
+    ["<leader>M"] = { "<cmd>Mason<cr>", desc = "Mason panel" },
   },
   t = {
     -- setting a mapping to false will disable it
