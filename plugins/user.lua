@@ -10,4 +10,15 @@ return {
   --   end,
   -- },
   { "RRethy/nvim-base16", event = "VeryLazy" },
+  -- {
+  --   "preservim/vim-markdown",
+  --   event = "VeryLazy",
+  --   opt = {
+  --     vim_markdown_folding_level = 6,
+  --     vim_markdown_folding_style_pythonic = 1,
+  --     vim_markdown_auto_insert_bullets = 0,
+  --   },
+  -- },
+  { "tpope/vim-repeat" },
+  { "ggandor/leap.nvim",  event = "VeryLazy", config = function() require("leap").add_default_mappings() end },
 }
