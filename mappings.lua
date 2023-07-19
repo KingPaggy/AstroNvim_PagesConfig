@@ -11,7 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -22,9 +24,18 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>L"] = { "<cmd>Lazy<cr>", desc = "Lazy panel" },
     ["<leader>M"] = { "<cmd>Mason<cr>", desc = "Mason panel" },
+
+    -- mapping for plugin "voldikss/vim-browser-search"
+    -- ["<leader>s"] = { "<cmd>BrowserSearch<CR>", desc = "Search words under curser" },
+    ["<leader>s"] = { "<plug>SearchNormal", desc = "Search words under curser" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    -- mapping for plugin "voldikss/vim-browser-search"
+    ["<leader>S"] = { "<cmd>BrowserSearch<CR>", desc = "Search words under curser" },
+    ["<leader>s"] = { "<plug>SearchVisual", desc = "Search words under curser" },
   },
 }

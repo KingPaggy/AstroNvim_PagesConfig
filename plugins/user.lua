@@ -21,4 +21,8 @@ return {
   -- },
   { "tpope/vim-repeat" },
   { "ggandor/leap.nvim",  event = "VeryLazy", config = function() require("leap").add_default_mappings() end },
+  {
+    "voldikss/vim-browser-search",
+    event = "VeryLazy",
+  },
 }
